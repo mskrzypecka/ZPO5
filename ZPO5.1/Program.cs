@@ -10,6 +10,12 @@ namespace ZPO5
     {
         static void Main(string[] args)
         {
+            FileStorage storage = new FileStorage(new System.IO.DirectoryInfo("some_directory"));
+            storage.Read("some_id");
+            storage.Save("del_info", "Delete file?");
+
+
+            Console.ReadKey();
         }
     }
 }
